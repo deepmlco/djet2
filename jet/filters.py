@@ -30,7 +30,7 @@ class RelatedFieldAjaxListFilter(RelatedFieldListFilter):
             'data-ajax--url': self.url,
             'data-queryset--lookup': self.lookup_kwarg,
             'data-queryset--params': json.dumps(dict(request.GET.items())),
-            'data-filter': f"By {self.title}",
+            'data-filter': f"{self.title}",
             **format_widget_data(self.widget_data),
         }))
 
